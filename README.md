@@ -1,16 +1,81 @@
-# React + Vite
+# Idris Kabangu - Professional Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website showcasing Idris Kabangu's expertise in business systems, strategy, finance, operations, and digital growth.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern React Application** - Built with React 19 and Vite for optimal performance
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Modular Architecture** - Clean component structure for easy maintenance
+- **SEO Optimized** - Structured content with proper meta tags and semantic HTML
+- **Fast Loading** - Optimized build with code splitting and asset optimization
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, Vite
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Deployment**: Ready for Netlify, Vercel, or GitHub Pages
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+idris-website/
+├── src/
+│   ├── components/     # Modular React components
+│   │   ├── Home.jsx    # Hero section with profile
+│   │   ├── About.jsx   # Professional background
+│   │   ├── Expertise.jsx # Services & certifications
+│   │   ├── Work.jsx    # Project portfolio
+│   │   ├── Insights.jsx # Thought leadership
+│   │   └── Contact.jsx # Contact information
+│   ├── assets/         # Images and media files
+│   ├── App.jsx         # Main application component
+│   └── main.jsx        # Application entry point
+├── public/             # Static assets
+└── dist/               # Build output
+```
+
+## 🏃‍♂️ Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/kabangumueyema/idris-website.git
+cd idris-website
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 📧 Contact
+
+**Idris Kabangu**
+- Email: kabangumueyema7@gmail.com
+- Phone: +243 84 843 24 39
+- Location: Kinshasa, Democratic Republic of Congo
+- LinkedIn: [linkedin.com/in/idris-kabangu](https://www.linkedin.com/in/idris-kabangu)
+
+## 📄 License
+
+This project is private and proprietary.

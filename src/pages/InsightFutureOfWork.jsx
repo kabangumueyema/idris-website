@@ -290,12 +290,12 @@ export default function InsightFutureOfWorkPage() {
                 </a>
               </li>
               <li>
-                <a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
+                <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
                   McKinsey - The economic potential of generative AI
                 </a>
               </li>
               <li>
-                <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-future-of-work" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
+                <a href="https://www.mckinsey.com/featured-insights/future-of-work/the-future-of-work-after-covid-19" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
                   McKinsey - The future of work
                 </a>
               </li>

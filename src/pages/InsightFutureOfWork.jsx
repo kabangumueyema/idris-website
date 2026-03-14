@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 
+export const articleMeta = {
+  slug: "future-of-work-ai-augmented-decision-making",
+  title: "The Future of Work: AI-Augmented Decision Making",
+  excerpt:
+    "An evidence-based analysis of how AI is reshaping decisions, workflows, and operational design across business functions.",
+  updatedAt: "March 2026",
+  seoTitle: "The Future of Work: AI-Augmented Decision Making | Idris Kabangu",
+  metaDescription:
+    "A practical, evidence-based framework for AI-augmented decision making using McKinsey research on adoption, scale, and operating model redesign.",
+};
+
 export default function InsightFutureOfWorkPage() {
   return (
     <>
       <Seo
-        title="The Future of Work: AI-Augmented Decision Making | Idris Kabangu"
-        description="How AI is transforming business operations and a practical framework for implementation across finance, operations, and strategy."
+        title={articleMeta.seoTitle}
+        description={articleMeta.metaDescription}
         path="/insights/future-of-work-ai-augmented-decision-making"
       />
 
@@ -14,12 +25,12 @@ export default function InsightFutureOfWorkPage() {
         <header className="border-b border-slate-200 pb-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Insights</p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl">
-            The Future of Work: AI-Augmented Decision Making
+            {articleMeta.title}
           </h1>
           <p className="mt-4 text-lg leading-8 text-slate-600">
             How AI is transforming business operations-and a practical framework for implementation
           </p>
-          <p className="mt-4 text-sm font-medium text-slate-500">Updated: March 2026</p>
+          <p className="mt-4 text-sm font-medium text-slate-500">Updated: {articleMeta.updatedAt}</p>
         </header>
 
         <div className="mt-10 space-y-8 text-base leading-8 text-slate-700">
@@ -54,6 +65,17 @@ export default function InsightFutureOfWorkPage() {
             productivity tool-will be better positioned to improve speed, quality, and consistency in how work gets
             done.
           </p>
+
+          <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <h2 className="text-2xl font-semibold text-slate-950">Key takeaways</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-6">
+              <li>According to McKinsey's 2025 global survey, 88% of organizations report regular AI use in at least one business function, while only a small minority report full enterprise scale.</li>
+              <li>McKinsey estimates that generative AI could add $2.6 trillion to $4.4 trillion in annual value across analyzed use cases, with the largest pools in customer operations, marketing and sales, software engineering, and R&D.</li>
+              <li>The evidence suggests that workflow redesign and governance maturity are stronger value drivers than tool access alone.</li>
+              <li>AI-augmented decision making is most effective when AI informs decisions and accountable humans validate final outcomes.</li>
+              <li>Analytical inference: organizations that integrate AI into decision systems, not only task automation, are more likely to scale value sustainably.</li>
+            </ul>
+          </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-slate-950">What AI-augmented decision making means</h2>
@@ -116,6 +138,25 @@ export default function InsightFutureOfWorkPage() {
               <li>workflows were never redesigned</li>
             </ul>
             <p className="mt-4">In other words, AI value is not just a technology issue. It is an operating model issue.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-slate-950">Evidence boundaries and analytical interpretation</h2>
+            <p className="mt-4">
+              The strongest claims in this article are directly grounded in published McKinsey survey findings and
+              reported estimates.
+            </p>
+            <p className="mt-4">
+              Forward-looking statements are analytical interpretations, not guaranteed outcomes. For example, claims
+              about competitive advantage from AI depend on implementation quality, governance design, data readiness,
+              and organizational adoption behaviors.
+            </p>
+            <p className="mt-4">This distinction supports disciplined decision-making:</p>
+            <ul className="mt-3 list-disc space-y-1 pl-6">
+              <li>survey percentages are evidence</li>
+              <li>strategy implications are analysis</li>
+              <li>enterprise outcomes are context-dependent</li>
+            </ul>
           </section>
 
           <section>
@@ -271,7 +312,7 @@ export default function InsightFutureOfWorkPage() {
           </section>
 
           <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-slate-950">Key takeaways</h2>
+            <h2 className="text-2xl font-semibold text-slate-950">Key takeaways recap</h2>
             <ul className="mt-4 list-disc space-y-2 pl-6">
               <li>AI-augmented decision making is not automation; it is AI supporting human judgment.</li>
               <li>Adoption is widespread, but enterprise-level scale remains limited.</li>

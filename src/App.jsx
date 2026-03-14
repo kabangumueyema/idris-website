@@ -11,6 +11,7 @@ const ExpertisePage = lazy(() => import("./pages/Expertise"));
 const ProjectsPage = lazy(() => import("./pages/Projects"));
 const InsightsPage = lazy(() => import("./pages/Insights"));
 const InsightFutureOfWorkPage = lazy(() => import("./pages/InsightFutureOfWork"));
+const InsightDigitalTransformationFSPage = lazy(() => import("./pages/InsightDigitalTransformationFS"));
 const ContactPage = lazy(() => import("./pages/Contact"));
 const NotFoundPage = lazy(() => import("./pages/NotFound"));
 
@@ -33,6 +34,7 @@ export default function App() {
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/insights" element={<InsightsPage />} />
                 <Route path="/insights/future-of-work-ai-augmented-decision-making" element={<InsightFutureOfWorkPage />} />
+                <Route path="/insights/digital-transformation-financial-services" element={<InsightDigitalTransformationFSPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>

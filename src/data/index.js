@@ -77,8 +77,8 @@ export const insights = [
   {
     title: "Digital Transformation in Financial Services",
     description:
-      "Key trends reshaping banking and fintech, including embedded finance and platform economics. Based on World Economic Forum insights.",
-    link: "https://www.weforum.org/agenda/2023/01/digital-transformation-financial-services/",
+      "Key trends reshaping banking and fintech, from embedded finance to platform economics.",
+    link: "/insights/digital-transformation-financial-services",
   },
   {
     title: "Sustainable Business Models: Beyond ESG",

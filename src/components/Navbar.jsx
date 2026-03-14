@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import brandLogo from "../assets/logo.svg";
 
 const navLinks = [
@@ -19,6 +19,11 @@ const linkClass = ({ isActive }) =>
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const mobileMenuId = "mobile-site-nav";
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/95 backdrop-blur">

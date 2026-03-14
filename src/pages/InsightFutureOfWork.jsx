@@ -4,12 +4,56 @@ import Seo from "../components/Seo";
 export const articleMeta = {
   slug: "future-of-work-ai-augmented-decision-making",
   title: "The Future of Work: AI-Augmented Decision Making",
+  category: "AI and Future of Work",
   excerpt:
     "An evidence-based analysis of how AI is reshaping decisions, workflows, and operational design across business functions.",
   updatedAt: "March 2026",
   seoTitle: "The Future of Work: AI-Augmented Decision Making | Idris Kabangu",
   metaDescription:
     "A practical, evidence-based framework for AI-augmented decision making using McKinsey research on adoption, scale, and operating model redesign.",
+};
+
+const articleUrl = "https://www.ikabangu.com/insights/future-of-work-ai-augmented-decision-making";
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: articleMeta.title,
+  description: articleMeta.excerpt,
+  datePublished: "2026-03-14",
+  dateModified: "2026-03-14",
+  inLanguage: "en",
+  author: {
+    "@type": "Person",
+    name: "Idris Kabangu",
+    url: "https://www.ikabangu.com/about",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Idris Kabangu",
+    url: "https://www.ikabangu.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.ikabangu.com/preview.jpg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": articleUrl,
+  },
+  url: articleUrl,
+  articleSection: articleMeta.category,
+  keywords: [
+    "future of work",
+    "AI-augmented decision making",
+    "enterprise AI adoption",
+    "workflow redesign",
+    "operating model",
+  ],
+  citation: [
+    "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+    "https://www.mckinsey.com/featured-insights/future-of-work/the-future-of-work-after-covid-19",
+  ],
 };
 
 export default function InsightFutureOfWorkPage() {
@@ -19,6 +63,7 @@ export default function InsightFutureOfWorkPage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/future-of-work-ai-augmented-decision-making"
+        structuredData={articleSchema}
       />
 
       <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8">

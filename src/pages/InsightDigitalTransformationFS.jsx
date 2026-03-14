@@ -4,12 +4,57 @@ import Seo from "../components/Seo";
 export const articleMeta = {
   slug: "digital-transformation-financial-services",
   title: "Digital Transformation in Financial Services",
+  category: "Financial Services Transformation",
   excerpt:
     "A structured analysis of how AI, embedded finance, APIs, and interoperability are reshaping banking and fintech.",
   updatedAt: "March 2026",
   seoTitle: "Digital Transformation in Financial Services | Idris Kabangu",
   metaDescription:
     "An evidence-based analysis of digital transformation in financial services using 2025 World Economic Forum findings on AI, fintech growth, collaboration, and interoperability.",
+};
+
+const articleUrl = "https://www.ikabangu.com/insights/digital-transformation-financial-services";
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: articleMeta.title,
+  description: articleMeta.excerpt,
+  datePublished: "2026-03-14",
+  dateModified: "2026-03-14",
+  inLanguage: "en",
+  author: {
+    "@type": "Person",
+    name: "Idris Kabangu",
+    url: "https://www.ikabangu.com/about",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Idris Kabangu",
+    url: "https://www.ikabangu.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.ikabangu.com/preview.jpg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": articleUrl,
+  },
+  url: articleUrl,
+  articleSection: articleMeta.category,
+  keywords: [
+    "digital transformation",
+    "financial services",
+    "embedded finance",
+    "open finance",
+    "API integration",
+    "fintech",
+  ],
+  citation: [
+    "https://www.weforum.org/publications/the-future-of-global-fintech-towards-resilient-growth-and-inclusive-transformation/",
+    "https://www.weforum.org/publications/ai-in-financial-services/",
+    "https://www.weforum.org/publications/the-future-of-tokenization/",
+  ],
 };
 
 export default function InsightDigitalTransformationFSPage() {
@@ -19,6 +64,7 @@ export default function InsightDigitalTransformationFSPage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/digital-transformation-financial-services"
+        structuredData={articleSchema}
       />
 
       <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8">

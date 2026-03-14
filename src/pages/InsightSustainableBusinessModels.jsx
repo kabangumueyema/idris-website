@@ -129,7 +129,7 @@ export default function InsightSustainableBusinessModelsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-slate-950">What beyond ESG really means</h2>
+            <h2 className="text-2xl font-semibold text-slate-950">What "beyond ESG" really means</h2>
             <p className="mt-4">Moving beyond ESG does not mean abandoning sustainability. It means integrating it.</p>
             <p className="mt-4">Strong organizations build sustainability into five connected layers of the business.</p>
 
@@ -185,7 +185,7 @@ export default function InsightSustainableBusinessModelsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-slate-950">What FASB changes and what it does not</h2>
+            <h2 className="text-2xl font-semibold text-slate-950">What FASB changes - and what it does not</h2>
             <p className="mt-4">It is important to be precise here.</p>
             <p className="mt-4">
               FASB is not the main global framework for broad sustainability disclosure. That role is more closely

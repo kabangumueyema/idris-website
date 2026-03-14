@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+const WEB3FORMS_ACCESS_KEY =
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "e69f0635-a1dd-4525-8dc4-ec227f378d73";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,11 +30,12 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "e69f0635-a1dd-4525-8dc4-ec227f378d73",
+          access_key: WEB3FORMS_ACCESS_KEY,
           name: formData.name,
           email: formData.email,
           message: formData.message,
           subject: "New message from Idris Kabangu website",
+          botcheck: "",
         }),
       });
 

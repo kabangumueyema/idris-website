@@ -83,6 +83,9 @@ export default function Home() {
               <img
                 src={profileImage}
                 alt="Idris Kabangu"
+                width="224"
+                height="224"
+                decoding="async"
                 className="h-full w-full object-contain"
               />
             </div>

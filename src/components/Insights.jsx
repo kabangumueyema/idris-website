@@ -1,30 +1,6 @@
+import { insights } from "../data/index.js";
+
 export default function Insights() {
-  const insights = [
-    {
-      title: "The Future of Work: AI-Augmented Decision Making",
-      description:
-        "How AI is transforming business operations, with practical frameworks for implementation. Drawing from McKinsey's research on AI adoption patterns.",
-      link: "https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-future-of-work",
-    },
-    {
-      title: "Digital Transformation in Financial Services",
-      description:
-        "Key trends reshaping banking and fintech, including embedded finance and platform economics. Based on World Economic Forum insights.",
-      link: "https://www.weforum.org/agenda/2023/01/digital-transformation-financial-services/",
-    },
-    {
-      title: "Sustainable Business Models: Beyond ESG",
-      description:
-        "Building resilient organizations through integrated sustainability strategies. Informed by FASB's evolving standards on ESG reporting.",
-      link: "https://www.fasb.org/page/PageContent?pageId=/standards-authority/standards-in-progress.html",
-    },
-    {
-      title: "Operational Excellence in the Digital Age",
-      description:
-        "Leveraging technology for process optimization and competitive advantage. Supported by research from Harvard Business Review.",
-      link: "https://hbr.org/topic/operations",
-    },
-  ];
 
   return (
     <section id="insights" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">

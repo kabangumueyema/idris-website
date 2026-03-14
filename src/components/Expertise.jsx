@@ -1,26 +1,6 @@
+import { services, certifications } from "../data/index.js";
+
 export default function Expertise() {
-  const services = [
-    {
-      title: "Systems Thinking",
-      description:
-        "Designing operating models, workflows, discipline, process design, leadership systems, productivity, coordination, and execution for sustainable growth. McKinsey research indicates that optimized operational systems can lead to significant productivity gains, with transformations delivering up to 20-30% improvements in efficiency (McKinsey & Company, 'To unleash productivity growth in Europe, rewire your operations').",
-    },
-    {
-      title: "Financial Clarity",
-      description:
-        "Building accounting systems, valuation, financial modeling, budgeting, decision discipline, and frameworks where numbers inform behavior and drive strategic outcomes. The Financial Accounting Standards Board (FASB) emphasizes that accurate financial reporting builds trust and supports better decision-making (FASB, Financial Reporting Standards).",
-    },
-    {
-      title: "Digital Authority and Growth",
-      description:
-        "Strengthening community engagement, discoverability, trust-driven visibility, AI-era marketing, platform behavior, and ethical digital presence. HubSpot research shows that trust-driven digital strategies can boost engagement by up to 50% (HubSpot, 'The State of Marketing Report 2024').",
-    },
-    {
-      title: "Leadership Through Service",
-      description:
-        "Guiding responsibility, mentoring, character, service, youth development, faith-grounded leadership, and the quiet disciplines behind influence and stewardship. The Harvard Business Review highlights that servant leadership improves team performance and retention (Harvard Business Review, 'The Power of Servant Leadership').",
-    },
-  ];
 
   return (
     <section id="expertise" className="border-y border-slate-200 bg-white">
@@ -45,18 +25,11 @@ export default function Expertise() {
         <div className="mt-16">
           <h3 className="text-2xl font-semibold text-slate-950 mb-6">Certifications</h3>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center">
-              <p className="text-sm font-semibold text-slate-900">QuickBooks Online</p>
-            </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center">
-              <p className="text-sm font-semibold text-slate-900">Google AI Essentials</p>
-            </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center">
-              <p className="text-sm font-semibold text-slate-900">Project Management</p>
-            </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center">
-              <p className="text-sm font-semibold text-slate-900">Accounting Systems</p>
-            </div>
+            {certifications.map((cert) => (
+              <div key={cert} className="rounded-2xl border border-slate-200 bg-white p-4 text-center">
+                <p className="text-sm font-semibold text-slate-900">{cert}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

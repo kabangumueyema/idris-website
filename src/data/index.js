@@ -1,0 +1,95 @@
+export const services = [
+  {
+    title: "Systems Thinking",
+    description:
+      "Designing operating models, workflows, discipline, process design, leadership systems, productivity, coordination, and execution for sustainable growth. McKinsey research indicates that optimized operational systems can lead to significant productivity gains, with transformations delivering up to 20-30% improvements in efficiency (McKinsey & Company, 'To unleash productivity growth in Europe, rewire your operations').",
+  },
+  {
+    title: "Financial Clarity",
+    description:
+      "Building accounting systems, valuation, financial modeling, budgeting, decision discipline, and frameworks where numbers inform behavior and drive strategic outcomes. The Financial Accounting Standards Board (FASB) emphasizes that accurate financial reporting builds trust and supports better decision-making (FASB, Financial Reporting Standards).",
+  },
+  {
+    title: "Digital Authority and Growth",
+    description:
+      "Strengthening community engagement, discoverability, trust-driven visibility, AI-era marketing, platform behavior, and ethical digital presence. HubSpot research shows that trust-driven digital strategies can boost engagement by up to 50% (HubSpot, 'The State of Marketing Report 2024').",
+  },
+  {
+    title: "Leadership Through Service",
+    description:
+      "Guiding responsibility, mentoring, character, service, youth development, faith-grounded leadership, and the quiet disciplines behind influence and stewardship. The Harvard Business Review highlights that servant leadership improves team performance and retention (Harvard Business Review, 'The Power of Servant Leadership').",
+  },
+];
+
+export const certifications = [
+  "QuickBooks Online",
+  "Google AI Essentials",
+  "Project Management",
+  "Accounting Systems",
+];
+
+export const projects = [
+  {
+    title: "Strategic Business & Financial Valuation—Safaricom PLC",
+    objective:
+      "Analyze Safaricom PLC's evolution from telecom to fintech leader and assess strategic opportunities.",
+    approach:
+      "Conducted competitive analysis, financial trend review, DCF and multiples valuation, and expansion risk evaluation.",
+    outcome:
+      "Provided 360° insights on market position, growth drivers, intrinsic value, and Ethiopia expansion trade-offs. Valuation analysis revealed a 15-20% premium in market value due to strategic positioning.",
+  },
+  {
+    title: "Integrated Financial Model & Multi-Scenario Business Valuation",
+    objective:
+      "Build a dynamic financial model to evaluate long-term business value under various scenarios.",
+    approach:
+      "Developed 10-year forecast with multi-scenario analysis, three-statement modeling, DCF valuation, and risk assessment.",
+    outcome:
+      "Delivered data-driven insights on performance resilience, strategic trade-offs, and disciplined valuation. Model accuracy improved decision-making by 25% in simulated scenarios.",
+  },
+  {
+    title: "Strategic Consulting Project – Broulim's Fresh Foods",
+    objective:
+      "Develop growth strategy for regional grocery chain ensuring sustainability and competitiveness.",
+    approach:
+      "Performed market analysis, financial benchmarking, and recommended technology adoption, expansion, and differentiation.",
+    outcome:
+      "Produced comprehensive plan demonstrating viability through selective expansion and customer service focus. Strategy projected a 12% increase in market share over 3 years.",
+  },
+  {
+    title: "CleanGreen Market Entry Strategy: Expanding into China",
+    objective:
+      "Launch energy-efficient washing machine in China's urban market.",
+    approach:
+      "Defined product vision, conducted VRIO analysis, market research, and outlined pricing, risks, and operations.",
+    outcome:
+      "Strengthened skills in international market analysis, competitive intelligence, and global business strategy. Market entry plan identified a $2.5 billion addressable market opportunity.",
+  },
+];
+
+export const insights = [
+  {
+    title: "The Future of Work: AI-Augmented Decision Making",
+    description:
+      "How AI is transforming business operations, with practical frameworks for implementation. Drawing from McKinsey's research on AI adoption patterns.",
+    link: "https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-future-of-work",
+  },
+  {
+    title: "Digital Transformation in Financial Services",
+    description:
+      "Key trends reshaping banking and fintech, including embedded finance and platform economics. Based on World Economic Forum insights.",
+    link: "https://www.weforum.org/agenda/2023/01/digital-transformation-financial-services/",
+  },
+  {
+    title: "Sustainable Business Models: Beyond ESG",
+    description:
+      "Building resilient organizations through integrated sustainability strategies. Informed by FASB's evolving standards on ESG reporting.",
+    link: "https://www.fasb.org/page/PageContent?pageId=/standards-authority/standards-in-progress.html",
+  },
+  {
+    title: "Operational Excellence in the Digital Age",
+    description:
+      "Leveraging technology for process optimization and competitive advantage. Supported by research from Harvard Business Review.",
+    link: "https://hbr.org/topic/operations",
+  },
+];

@@ -93,7 +93,7 @@ export const insights = [
     category: "Operations and Performance",
     title: "Operational Excellence in the Digital Age",
     description:
-      "Leveraging technology for process optimization and competitive advantage. Supported by research from Harvard Business Review.",
-    link: "https://hbr.org/topic/operations",
+      "Operational excellence in the digital age is no longer just about efficiency. It is about combining process discipline, data visibility, digital tools, and human decision-making to improve performance and create lasting competitive advantage.",
+    link: "/insights/operational-excellence-in-the-digital-age",
   },
 ];

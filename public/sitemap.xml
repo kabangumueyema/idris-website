@@ -26,6 +26,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ikabangu.com/insights/future-of-work-ai-augmented-decision-making</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ikabangu.com/insights/digital-transformation-financial-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ikabangu.com/insights/sustainable-business-models-beyond-esg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ikabangu.com/insights/operational-excellence-in-the-digital-age</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.ikabangu.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

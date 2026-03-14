@@ -69,24 +69,28 @@ export const projects = [
 
 export const insights = [
   {
+    category: "AI and Future of Work",
     title: "The Future of Work: AI-Augmented Decision Making",
     description:
-      "How AI is transforming business operations-and a practical framework for implementation.",
+      "An evidence-based analysis of how AI is reshaping decisions, workflows, and operating design across business functions.",
     link: "/insights/future-of-work-ai-augmented-decision-making",
   },
   {
+    category: "Financial Services Transformation",
     title: "Digital Transformation in Financial Services",
     description:
-      "Key trends reshaping banking and fintech, from embedded finance to platform economics.",
+      "A structured analysis of how AI, embedded finance, APIs, and interoperability are reshaping banking and fintech.",
     link: "/insights/digital-transformation-financial-services",
   },
   {
+    category: "Sustainability Strategy",
     title: "Sustainable Business Models: Beyond ESG",
     description:
-      "Building resilient organizations through integrated sustainability strategies. Informed by FASB's evolving standards on ESG reporting.",
-    link: "https://www.fasb.org/page/PageContent?pageId=/standards-authority/standards-in-progress.html",
+      "Sustainability is no longer a branding layer added after strategy. The most resilient organizations are embedding sustainability into operating models, capital allocation, governance, and reporting discipline.",
+    link: "/insights/sustainable-business-models-beyond-esg",
   },
   {
+    category: "Operations and Performance",
     title: "Operational Excellence in the Digital Age",
     description:
       "Leveraging technology for process optimization and competitive advantage. Supported by research from Harvard Business Review.",

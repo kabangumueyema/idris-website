@@ -18,6 +18,7 @@ const linkClass = ({ isActive }) =>
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const mobileMenuId = "mobile-site-nav";
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/95 backdrop-blur">
@@ -46,20 +47,29 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
+          type="button"
           onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
-          className="flex flex-col gap-1.5 p-1 md:hidden"
+          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={open}
+          aria-controls={mobileMenuId}
+          className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 md:hidden"
         >
-          <span className={`block h-px w-5 bg-slate-700 transition-transform duration-200 ${open ? "translate-y-2.5 rotate-45" : ""}`} />
-          <span className={`block h-px w-5 bg-slate-700 transition-opacity duration-200 ${open ? "opacity-0" : ""}`} />
-          <span className={`block h-px w-5 bg-slate-700 transition-transform duration-200 ${open ? "-translate-y-2.5 -rotate-45" : ""}`} />
+          <span className="sr-only">Menu</span>
+          <span className="relative h-5 w-5">
+            <span className={`absolute left-0 top-1/2 block h-0.5 w-5 -translate-y-2 bg-slate-700 transition-transform duration-200 ${open ? "translate-y-0 rotate-45" : ""}`} />
+            <span className={`absolute left-0 top-1/2 block h-0.5 w-5 bg-slate-700 transition-opacity duration-200 ${open ? "opacity-0" : "opacity-100"}`} />
+            <span className={`absolute left-0 top-1/2 block h-0.5 w-5 translate-y-2 bg-slate-700 transition-transform duration-200 ${open ? "translate-y-0 -rotate-45" : ""}`} />
+          </span>
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <nav className="border-t border-slate-100 bg-slate-50 px-6 pb-5 pt-4 md:hidden">
-          <ul className="flex flex-col gap-4 text-sm">
+        <nav
+          id={mobileMenuId}
+          className="border-t border-slate-200 bg-slate-50 px-6 pb-5 pt-4 shadow-sm md:hidden"
+        >
+          <ul className="flex flex-col gap-2 text-sm">
             {navLinks.map(({ to, label, end }) => (
               <li key={to}>
                 <NavLink
@@ -68,8 +78,8 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
                     isActive
-                      ? "font-semibold text-blue-600"
-                      : "text-slate-600 transition-colors hover:text-slate-900"
+                      ? "block rounded-xl bg-blue-50 px-4 py-3 font-semibold text-blue-700"
+                      : "block rounded-xl px-4 py-3 text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900"
                   }
                 >
                   {label}

@@ -13,6 +13,53 @@ export const articleMeta = {
     "An evidence-based analysis of sustainable business models beyond ESG, with practical implications for strategy, operations, governance, finance, and reporting discipline.",
 };
 
+const articleUrl = "https://www.ikabangu.com/insights/sustainable-business-models-beyond-esg";
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: articleMeta.title,
+  description: articleMeta.excerpt,
+  datePublished: "2026-03-14",
+  dateModified: "2026-03-14",
+  inLanguage: "en",
+  author: {
+    "@type": "Person",
+    name: "Idris Kabangu",
+    url: "https://www.ikabangu.com/about",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Idris Kabangu",
+    url: "https://www.ikabangu.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.ikabangu.com/preview.jpg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": articleUrl,
+  },
+  url: articleUrl,
+  articleSection: articleMeta.category,
+  keywords: [
+    "sustainability strategy",
+    "business model design",
+    "IFRS S1",
+    "IFRS S2",
+    "ISSB",
+    "FASB",
+    "climate disclosure",
+  ],
+  citation: [
+    "https://www.ifrs.org/news-and-events/news/2023/06/issb-issues-ifrs-s1-ifrs-s2/",
+    "https://www.ifrs.org/projects/implementation/issb-standards-adoption/",
+    "https://www.fasb.org/page/PageContent?pageId=/news-releases/fasb-issues-accounting-standards-update-disaggregation-of-income-statement-expenses.html",
+    "https://www.fasb.org/page/PageContent?pageId=/projects/recently-completed/environmental-credits-and-environmental-credit-obligations.html",
+    "https://www.sec.gov/newsroom/press-releases/2025-60",
+  ],
+};
+
 export default function InsightSustainableBusinessModelsPage() {
   return (
     <>
@@ -20,6 +67,7 @@ export default function InsightSustainableBusinessModelsPage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/sustainable-business-models-beyond-esg"
+        structuredData={articleSchema}
       />
 
       <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8">

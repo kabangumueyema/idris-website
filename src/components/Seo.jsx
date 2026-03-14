@@ -3,8 +3,13 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://www.ikabangu.com";
 const DEFAULT_IMAGE = `${SITE_URL}/preview.jpg`;
 
-export default function Seo({ title, description, path = "/" }) {
+export default function Seo({ title, description, path = "/", structuredData = null }) {
   const canonicalUrl = `${SITE_URL}${path}`;
+  const schemaItems = Array.isArray(structuredData)
+    ? structuredData.filter(Boolean)
+    : structuredData
+      ? [structuredData]
+      : [];
 
   return (
     <Helmet>
@@ -24,6 +29,12 @@ export default function Seo({ title, description, path = "/" }) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={DEFAULT_IMAGE} />
+
+      {schemaItems.map((schemaItem, index) => (
+        <script key={`jsonld-${index}`} type="application/ld+json">
+          {JSON.stringify(schemaItem)}
+        </script>
+      ))}
     </Helmet>
   );
 }

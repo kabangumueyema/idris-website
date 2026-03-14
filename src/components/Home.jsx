@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profileImage from "../assets/missionary-picture.jpg";
 
 export default function Home() {
@@ -23,15 +24,15 @@ export default function Home() {
             As a business systems and strategy professional at the intersection of finance, operations, and digital growth, I bring structure to complexity, translate vision into process, and connect numbers with execution—so decisions are data-driven, operations are reliable, and growth is sustainable. According to the Project Management Institute (PMI), structured operational processes can improve efficiency by up to 30% (PMI, 'Pulse of the Profession 2024').
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <a href="#about" className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700">
+            <Link to="/about" className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700">
               Learn more
-            </a>
-            <a href="#insights" className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400">
+            </Link>
+            <Link to="/insights" className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400">
               View insights
-            </a>
-            <a href="#contact" className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400">
+            </Link>
+            <Link to="/contact" className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 

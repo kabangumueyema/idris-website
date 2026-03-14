@@ -11,8 +11,12 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="#home" className="flex items-center gap-3 text-sm font-semibold tracking-wide text-slate-900">
-            <img src={brandLogo} alt="Idris Kabangu Logo" className="h-8 w-8" />
+          <a href="#home" className="flex items-center gap-2 text-sm font-semibold tracking-wide text-slate-900">
+            <img
+              src={brandLogo}
+              alt="Idris Kabangu logo"
+              className="h-7 w-7 rounded-md object-contain"
+            />
             <span>Idris Kabangu</span>
           </a>
           <nav className="hidden gap-8 text-sm text-slate-700 md:flex">

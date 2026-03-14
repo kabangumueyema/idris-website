@@ -57,9 +57,9 @@ const blogPostingSchema = {
   citation: [
     "https://www.mckinsey.com/capabilities/operations/our-insights",
     "https://hbr.org/topic/operations",
-    "https://hbr.org/topic/artificial-intelligence",
+    "https://hbr.org/topic/subject/ai-and-machine-learning",
     "https://www.bain.com/insights/topics/operations/",
-    "https://www.bain.com/insights/topics/digital/",
+    "https://www.bain.com/insights/topics/ai/",
   ],
 };
 
@@ -378,12 +378,12 @@ export default function InsightOperationalExcellencePage() {
               </li>
               <li>
                 <a
-                  href="https://hbr.org/topic/artificial-intelligence"
+                  href="https://hbr.org/topic/subject/ai-and-machine-learning"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-800 hover:underline"
                 >
-                  Harvard Business Review - Artificial Intelligence Topic
+                  Harvard Business Review - AI and Machine Learning Topic
                 </a>
               </li>
               <li>
@@ -398,12 +398,12 @@ export default function InsightOperationalExcellencePage() {
               </li>
               <li>
                 <a
-                  href="https://www.bain.com/insights/topics/digital/"
+                  href="https://www.bain.com/insights/topics/ai/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-800 hover:underline"
                 >
-                  Bain - Digital Insights
+                  Bain - Artificial Intelligence Insights
                 </a>
               </li>
             </ul>

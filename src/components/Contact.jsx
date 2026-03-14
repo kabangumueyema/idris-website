@@ -1,4 +1,64 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: "", message: "" });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "YOUR_WEB3FORMS_e69f0635-a1dd-4525-8dc4-ec227f378d73",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: "New message from Idris Kabangu website",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({
+          type: "success",
+          message: "Message sent successfully. Thank you for reaching out.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus({
+          type: "error",
+          message: result.message || "Something went wrong. Please try again.",
+        });
+      }
+    } catch {
+      setStatus({
+        type: "error",
+        message: "Unable to send message right now. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
       <div className="max-w-3xl">
@@ -42,13 +102,16 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-slate-700">Name</label>
             <input
               type="text"
               id="name"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
               className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
@@ -58,6 +121,9 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
               className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
@@ -67,15 +133,29 @@ export default function Contact() {
               id="message"
               name="message"
               rows={4}
+              value={formData.message}
+              onChange={handleChange}
+              required
               className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </div>
           <button
             type="submit"
+            disabled={isSubmitting}
             className="w-full rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            Send Message
+            {isSubmitting ? "Sending..." : "Send Message"}
           </button>
+          {status.message && (
+            <p
+              className={`text-sm ${
+                status.type === "success" ? "text-green-600" : "text-red-600"
+              }`}
+              role="status"
+            >
+              {status.message}
+            </p>
+          )}
         </form>
       </div>
     </section>

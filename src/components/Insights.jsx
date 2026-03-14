@@ -21,7 +21,7 @@ export default function Insights() {
                 to={insight.link}
                 className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700"
               >
-                Read article ->
+                Read article &rarr;
               </Link>
             ) : (
               <a
@@ -30,7 +30,7 @@ export default function Insights() {
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700"
               >
-                Read more ->
+                Read more &rarr;
               </a>
             )}
           </div>

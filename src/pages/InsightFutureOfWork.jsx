@@ -314,7 +314,7 @@ export default function InsightFutureOfWorkPage() {
 
         <div className="mt-10">
           <Link to="/insights" className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700">
-            Back to Insights ->
+            Back to Insights &rarr;
           </Link>
         </div>
       </article>

@@ -71,8 +71,8 @@ export const insights = [
   {
     title: "The Future of Work: AI-Augmented Decision Making",
     description:
-      "How AI is transforming business operations, with practical frameworks for implementation. Drawing from McKinsey's research on AI adoption patterns.",
-    link: "https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-future-of-work",
+      "How AI is transforming business operations-and a practical framework for implementation.",
+    link: "/insights/future-of-work-ai-augmented-decision-making",
   },
   {
     title: "Digital Transformation in Financial Services",

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { insights } from "../data/index.js";
 
 export default function Insights() {
+  const isInternalLink = (url) => url.startsWith("/");
 
   return (
     <section id="insights" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
@@ -14,14 +16,23 @@ export default function Insights() {
           <div key={insight.title} className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <h3 className="text-xl font-semibold text-slate-950">{insight.title}</h3>
             <p className="mt-4 text-sm leading-7 text-slate-600">{insight.description}</p>
-            <a
-              href={insight.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700"
-            >
-              Read more →
-            </a>
+            {isInternalLink(insight.link) ? (
+              <Link
+                to={insight.link}
+                className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Read article ->
+              </Link>
+            ) : (
+              <a
+                href={insight.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Read more ->
+              </a>
+            )}
           </div>
         ))}
       </div>

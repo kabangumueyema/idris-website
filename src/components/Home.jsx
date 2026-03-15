@@ -73,6 +73,26 @@ export default function Home() {
               <li>Evidence-heavy claims are linked to primary sources whenever possible.</li>
             </ol>
           </div>
+          <div className="mt-4 max-w-2xl rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <h2 className="text-base font-semibold text-slate-900">Method references</h2>
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7 text-slate-600">
+              <li>
+                <a href="https://developers.google.com/search/docs/appearance/structured-data/article" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                  Google Search Central - Article structured data
+                </a>
+              </li>
+              <li>
+                <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                  Google Search Central - Sitemap guidance
+                </a>
+              </li>
+              <li>
+                <a href="https://schema.org/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                  Schema.org - Structured data vocabulary
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/about" className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md">
               Start with About

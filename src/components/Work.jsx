@@ -20,6 +20,27 @@ export default function Work() {
           <li>Results are presented as decision-support evidence, not universal guarantees.</li>
         </ul>
       </div>
+      
+        <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <h2 className="text-base font-semibold text-slate-900">Methods and references</h2>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7 text-slate-600">
+            <li>
+              <a href="https://www.pmi.org/pmbok-guide-standards" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                Project Management Institute - PM standards
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ifrs.org/issued-standards/list-of-standards/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                IFRS Foundation - Reporting standards
+              </a>
+            </li>
+            <li>
+              <a href="https://data.worldbank.org/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                World Bank Open Data - Macro assumptions context
+              </a>
+            </li>
+          </ul>
+        </div>
 
       <div className="mt-12 space-y-6">
         {projects.map((project) => (

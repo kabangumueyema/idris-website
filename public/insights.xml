@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idris Kabangu Insights</title>
+    <link>https://www.ikabangu.com/insights</link>
+    <description>Long-form insights on business systems, strategy, finance, operations, and digital growth.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.ikabangu.com/insights.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>The Future of Work: AI-Augmented Decision Making</title>
+      <link>https://www.ikabangu.com/insights/future-of-work-ai-augmented-decision-making</link>
+      <guid isPermaLink="true">https://www.ikabangu.com/insights/future-of-work-ai-augmented-decision-making</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
+      <category>AI and Future of Work</category>
+      <description>An evidence-based analysis of how AI is reshaping decisions, workflows, and operating design across business functions.</description>
+    </item>
+
+    <item>
+      <title>Digital Transformation in Financial Services</title>
+      <link>https://www.ikabangu.com/insights/digital-transformation-financial-services</link>
+      <guid isPermaLink="true">https://www.ikabangu.com/insights/digital-transformation-financial-services</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
+      <category>Financial Services Transformation</category>
+      <description>A structured analysis of how AI, embedded finance, APIs, and interoperability are reshaping banking and fintech.</description>
+    </item>
+
+    <item>
+      <title>Sustainable Business Models: Beyond ESG</title>
+      <link>https://www.ikabangu.com/insights/sustainable-business-models-beyond-esg</link>
+      <guid isPermaLink="true">https://www.ikabangu.com/insights/sustainable-business-models-beyond-esg</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
+      <category>Sustainability Strategy</category>
+      <description>Sustainability is no longer a branding layer added after strategy. The most resilient organizations are embedding sustainability into operating models, capital allocation, governance, and reporting discipline.</description>
+    </item>
+
+    <item>
+      <title>Operational Excellence in the Digital Age</title>
+      <link>https://www.ikabangu.com/insights/operational-excellence-in-the-digital-age</link>
+      <guid isPermaLink="true">https://www.ikabangu.com/insights/operational-excellence-in-the-digital-age</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
+      <category>Operations and Performance</category>
+      <description>Operational excellence in the digital age is no longer just about efficiency. It is about combining process discipline, data visibility, digital tools, and human decision-making to improve performance and create lasting competitive advantage.</description>
+    </item>
+  </channel>
+</rss>

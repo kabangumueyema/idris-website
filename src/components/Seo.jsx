@@ -29,6 +29,7 @@ export default function Seo({
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      <link rel="alternate" type="application/rss+xml" title="Idris Kabangu Insights RSS" href={`${SITE_URL}/insights.xml`} />
 
       <meta property="og:type" content={type} />
       <meta property="og:site_name" content="Idris Kabangu" />

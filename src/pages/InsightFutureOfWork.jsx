@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
+import RelatedInsights from "../components/RelatedInsights";
 
 export const articleMeta = {
   slug: "future-of-work-ai-augmented-decision-making",
@@ -11,6 +12,8 @@ export const articleMeta = {
   seoTitle: "The Future of Work: AI-Augmented Decision Making | Idris Kabangu",
   metaDescription:
     "A practical, evidence-based framework for AI-augmented decision making using McKinsey research on adoption, scale, and operating model redesign.",
+  author: "Idris Kabangu",
+  publishedAt: "2026-03-14",
 };
 
 const articleUrl = "https://www.ikabangu.com/insights/future-of-work-ai-augmented-decision-making";
@@ -63,6 +66,12 @@ export default function InsightFutureOfWorkPage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/future-of-work-ai-augmented-decision-making"
+        type="article"
+        author={articleMeta.author}
+        publishedTime={articleMeta.publishedAt}
+        modifiedTime={articleMeta.publishedAt}
+        section={articleMeta.category}
+        tags={["future of work", "AI decision making", "workflow redesign", "enterprise AI"]}
         structuredData={articleSchema}
       />
 
@@ -399,6 +408,8 @@ export default function InsightFutureOfWorkPage() {
         </section>
 
         <div className="mt-10">
+          <RelatedInsights currentPath="/insights/future-of-work-ai-augmented-decision-making" />
+
           <Link to="/insights" className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700">
             Back to Insights &rarr;
           </Link>

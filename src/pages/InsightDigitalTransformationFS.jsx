@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
+import RelatedInsights from "../components/RelatedInsights";
 
 export const articleMeta = {
   slug: "digital-transformation-financial-services",
@@ -7,6 +8,8 @@ export const articleMeta = {
   category: "Financial Services Transformation",
   excerpt:
     "A structured analysis of how AI, embedded finance, APIs, and interoperability are reshaping banking and fintech.",
+  author: "Idris Kabangu",
+  publishedAt: "2026-03-14",
   updatedAt: "March 2026",
   seoTitle: "Digital Transformation in Financial Services | Idris Kabangu",
   metaDescription:
@@ -64,6 +67,12 @@ export default function InsightDigitalTransformationFSPage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/digital-transformation-financial-services"
+        type="article"
+        author={articleMeta.author}
+        publishedTime={articleMeta.publishedAt}
+        modifiedTime={articleMeta.publishedAt}
+        section={articleMeta.category}
+        tags={["digital transformation", "financial services", "embedded finance", "open finance", "fintech"]}
         structuredData={articleSchema}
       />
 
@@ -286,6 +295,8 @@ export default function InsightDigitalTransformationFSPage() {
             financial structure, and decision quality through systems thinking and structured execution.
           </p>
         </section>
+
+        <RelatedInsights currentPath="/insights/digital-transformation-financial-services" />
 
         <div className="mt-10">
           <Link to="/insights" className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
+import RelatedInsights from "../components/RelatedInsights";
 
 export const articleMeta = {
   slug: "operational-excellence-in-the-digital-age",
@@ -70,6 +71,12 @@ export default function InsightOperationalExcellencePage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/operational-excellence-in-the-digital-age"
+        type="article"
+        author={articleMeta.author}
+        publishedTime="2026-03-14"
+        modifiedTime="2026-03-15"
+        section={articleMeta.category}
+        tags={["operational excellence", "digital operations", "process optimization", "AI adoption", "performance"]}
         structuredData={blogPostingSchema}
       />
 
@@ -420,6 +427,8 @@ export default function InsightOperationalExcellencePage() {
             digital operations, AI adoption, and performance improvement.
           </p>
         </section>
+
+        <RelatedInsights currentPath="/insights/operational-excellence-in-the-digital-age" />
 
         <div className="mt-10">
           <Link to="/insights" className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700">

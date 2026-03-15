@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
+import RelatedInsights from "../components/RelatedInsights";
 
 export const articleMeta = {
   slug: "sustainable-business-models-beyond-esg",
@@ -7,6 +8,8 @@ export const articleMeta = {
   category: "Sustainability Strategy",
   excerpt:
     "Sustainability is no longer a branding layer added after strategy. The most resilient organizations are embedding sustainability into operating models, capital allocation, governance, and reporting discipline.",
+  author: "Idris Kabangu",
+  publishedAt: "2026-03-14",
   updatedAt: "March 2026",
   seoTitle: "Sustainable Business Models: Beyond ESG | Idris Kabangu",
   metaDescription:
@@ -67,6 +70,12 @@ export default function InsightSustainableBusinessModelsPage() {
         title={articleMeta.seoTitle}
         description={articleMeta.metaDescription}
         path="/insights/sustainable-business-models-beyond-esg"
+        type="article"
+        author={articleMeta.author}
+        publishedTime={articleMeta.publishedAt}
+        modifiedTime={articleMeta.publishedAt}
+        section={articleMeta.category}
+        tags={["sustainability strategy", "ESG", "IFRS S1", "IFRS S2", "governance", "reporting"]}
         structuredData={articleSchema}
       />
 
@@ -432,6 +441,8 @@ export default function InsightSustainableBusinessModelsPage() {
             structured analysis."
           </p>
         </section>
+
+        <RelatedInsights currentPath="/insights/sustainable-business-models-beyond-esg" />
 
         <div className="mt-10">
           <Link to="/insights" className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700">

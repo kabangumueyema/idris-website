@@ -2,22 +2,31 @@ export const services = [
   {
     title: "Systems Thinking",
     description:
-      "Designing operating models, workflows, discipline, process design, leadership systems, productivity, coordination, and execution for sustainable growth. McKinsey research indicates that optimized operational systems can lead to significant productivity gains, with transformations delivering up to 20-30% improvements in efficiency (McKinsey & Company, 'To unleash productivity growth in Europe, rewire your operations').",
+      "Designing operating models, workflows, and execution systems for sustainable growth. McKinsey operations research reports that rewired operations can produce material productivity improvements when process redesign and capability building are implemented together.",
+    sourceLabel: "McKinsey - To unleash productivity growth in Europe, rewire your operations",
+    sourceUrl:
+      "https://www.mckinsey.com/capabilities/operations/our-insights/to-unleash-productivity-growth-in-europe-rewire-your-operations",
   },
   {
     title: "Financial Clarity",
     description:
-      "Building accounting systems, valuation, financial modeling, budgeting, decision discipline, and frameworks where numbers inform behavior and drive strategic outcomes. The Financial Accounting Standards Board (FASB) emphasizes that accurate financial reporting builds trust and supports better decision-making (FASB, Financial Reporting Standards).",
+      "Building accounting systems, valuation models, budgeting discipline, and decision frameworks where numbers inform behavior. FASB standards emphasize comparability and reliability in financial reporting, which are foundational for decision quality.",
+    sourceLabel: "FASB - Accounting Standards Codification",
+    sourceUrl: "https://asc.fasb.org/",
   },
   {
     title: "Digital Authority and Growth",
     description:
-      "Strengthening community engagement, discoverability, trust-driven visibility, AI-era marketing, platform behavior, and ethical digital presence. HubSpot research shows that trust-driven digital strategies can boost engagement by up to 50% (HubSpot, 'The State of Marketing Report 2024').",
+      "Strengthening discoverability, trust-driven visibility, platform behavior strategy, and ethical digital presence. Search systems increasingly prioritize useful, high-quality, people-first content supported by clear structure and trustworthy signals.",
+    sourceLabel: "Google Search Central - Creating helpful, reliable, people-first content",
+    sourceUrl: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
   },
   {
     title: "Leadership Through Service",
     description:
-      "Guiding responsibility, mentoring, character, service, youth development, faith-grounded leadership, and the quiet disciplines behind influence and stewardship. The Harvard Business Review highlights that servant leadership improves team performance and retention (Harvard Business Review, 'The Power of Servant Leadership').",
+      "Guiding responsibility, mentoring, stewardship, and character-centered leadership practices. Research literature on servant leadership associates service-oriented leadership behaviors with stronger team trust and organizational outcomes.",
+    sourceLabel: "Harvard Business Review - The Power of Servant Leadership",
+    sourceUrl: "https://hbr.org/2017/09/the-power-of-servant-leadership",
   },
 ];
 
@@ -36,7 +45,7 @@ export const projects = [
     approach:
       "Conducted competitive analysis, financial trend review, DCF and multiples valuation, and expansion risk evaluation.",
     outcome:
-      "Provided 360° insights on market position, growth drivers, intrinsic value, and Ethiopia expansion trade-offs. Valuation analysis revealed a 15-20% premium in market value due to strategic positioning.",
+      "Delivered a structured view of market position, growth drivers, intrinsic value, and Ethiopia expansion trade-offs. Scenario outputs indicated a potential valuation premium under defined assumptions.",
   },
   {
     title: "Integrated Financial Model & Multi-Scenario Business Valuation",
@@ -45,7 +54,7 @@ export const projects = [
     approach:
       "Developed 10-year forecast with multi-scenario analysis, three-statement modeling, DCF valuation, and risk assessment.",
     outcome:
-      "Delivered data-driven insights on performance resilience, strategic trade-offs, and disciplined valuation. Model accuracy improved decision-making by 25% in simulated scenarios.",
+      "Delivered data-driven insights on performance resilience, strategic trade-offs, and disciplined valuation. Simulated scenarios indicated improved decision quality under clearer assumption tracking.",
   },
   {
     title: "Strategic Consulting Project – Broulim's Fresh Foods",
@@ -54,7 +63,7 @@ export const projects = [
     approach:
       "Performed market analysis, financial benchmarking, and recommended technology adoption, expansion, and differentiation.",
     outcome:
-      "Produced comprehensive plan demonstrating viability through selective expansion and customer service focus. Strategy projected a 12% increase in market share over 3 years.",
+      "Produced a comprehensive plan focused on selective expansion and differentiated service. Project scenarios suggested potential share gains over a multi-year horizon under documented assumptions.",
   },
   {
     title: "CleanGreen Market Entry Strategy: Expanding into China",
@@ -63,7 +72,7 @@ export const projects = [
     approach:
       "Defined product vision, conducted VRIO analysis, market research, and outlined pricing, risks, and operations.",
     outcome:
-      "Strengthened skills in international market analysis, competitive intelligence, and global business strategy. Market entry plan identified a $2.5 billion addressable market opportunity.",
+      "Strengthened capabilities in international market analysis, competitive intelligence, and global strategy design. The project estimated an addressable opportunity range based on stated market assumptions.",
   },
 ];
 

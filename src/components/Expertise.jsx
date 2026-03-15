@@ -29,6 +29,19 @@ export default function Expertise() {
             <div key={service.title} className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
               <h3 className="text-xl font-semibold text-slate-950">{service.title}</h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">{service.description}</p>
+              {service.sourceUrl && service.sourceLabel && (
+                <p className="mt-4 text-xs leading-6 text-slate-500">
+                  Source:{" "}
+                  <a
+                    href={service.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-blue-700 hover:text-blue-800 hover:underline"
+                  >
+                    {service.sourceLabel}
+                  </a>
+                </p>
+              )}
             </div>
           ))}
         </div>

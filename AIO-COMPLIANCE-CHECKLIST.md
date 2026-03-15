@@ -18,14 +18,14 @@ Scoring model: 0-2 points each
 8. Explicit limits/assumptions where needed
 
 ## Before vs After
-- Home: 10/16 -> 16/16
-- About: 9/16 -> 15/16
-- Expertise: 8/16 -> 16/16
+- Home: 10/16 -> 14/16
+- About: 9/16 -> 13/16
+- Expertise: 8/16 -> 15/16
 - Projects: 8/16 -> 16/16
 
 ## Notes
 - Expertise now includes per-card source links to primary or authoritative references.
 - Projects outcomes were rewritten to avoid absolute claims and to reflect assumption-based analysis.
-- Home and Projects now include explicit mini source blocks with authoritative outbound references.
+- Home no longer includes reference-source blocks, per current content preference.
 - About and Home include clearer scannable blocks and freshness signals.
-- Positioning pages now meet full checklist criteria, while long-form Insights remain the most citation-dense content layer.
+- Positioning pages remain structured and readable, while long-form Insights continue to be the most citation-dense content layer.

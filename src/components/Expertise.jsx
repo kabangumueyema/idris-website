@@ -56,27 +56,6 @@ export default function Expertise() {
             ))}
           </div>
         </div>
-
-        <div className="mt-12 rounded-2xl border border-slate-200 bg-white p-6">
-          <h3 className="text-lg font-semibold text-slate-950">Reference standards used in this site</h3>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7">
-            <li>
-              <a href="https://developers.google.com/search/docs/appearance/structured-data/article" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                Google Search Central - Article structured data
-              </a>
-            </li>
-            <li>
-              <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                Google Search Central - Sitemaps
-              </a>
-            </li>
-            <li>
-              <a href="https://schema.org/ItemList" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                Schema.org - ItemList for structured content collections
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
   );

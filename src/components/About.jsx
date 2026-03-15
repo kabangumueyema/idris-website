@@ -20,32 +20,6 @@ export default function About() {
           <p>
             Certified in QuickBooks Online, Google AI Essentials, Project Management, and Accounting Systems, I follow a practical approach: clarity over complexity, systems over shortcuts, and outcomes over noise.
           </p>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <h3 className="text-lg font-semibold text-slate-900">Evidence and attribution approach</h3>
-            <p className="mt-2 text-sm leading-7 text-slate-600">
-              This website is written using clear structure and source attribution principles aligned with search-quality guidance.
-            </p>
-            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7">
-              <li>
-                <a href="https://developers.google.com/search/docs/appearance/structured-data/article" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                  Google Search Central - Article structured data guidance
-                </a>
-              </li>
-              <li>
-                <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                  Google Search Central - Sitemap best practices
-                </a>
-              </li>
-              <li>
-                <a href="https://schema.org/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                  Schema.org - Structured data vocabulary
-                </a>
-              </li>
-            </ul>
-          </div>
-          <p>
-            This positioning reflects a journeyman-expert model: rigorous research, transparent sourcing, and careful explanation rather than inflated claims.
-          </p>
         </div>
       </div>
 

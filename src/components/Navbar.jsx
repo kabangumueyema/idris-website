@@ -42,7 +42,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-8 text-sm md:flex">
+        <nav aria-label="Main navigation" className="hidden items-center gap-8 text-sm md:flex">
           {navLinks.map(({ to, label, end }) => (
             <NavLink key={to} to={to} end={end} className={linkClass}>
               {label}
@@ -72,6 +72,7 @@ export default function Navbar() {
       {open && (
         <nav
           id={mobileMenuId}
+          aria-label="Mobile navigation"
           className="border-t border-slate-200 bg-slate-50 px-4 pb-5 pt-4 shadow-sm sm:px-6 md:hidden"
         >
           <ul className="flex flex-col gap-2 text-sm">

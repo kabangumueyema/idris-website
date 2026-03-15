@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import BackToTop from "./components/BackToTop";
 
 const HomePage = lazy(() => import("./pages/Home"));
 const AboutPage = lazy(() => import("./pages/About"));
@@ -26,6 +27,7 @@ export default function App() {
             Skip to main content
           </a>
           <ScrollToTop />
+          <BackToTop />
           <Navbar />
           <main id="main-content">
             <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-10 text-sm text-slate-500 sm:px-6 lg:px-8">Loading...</div>}>

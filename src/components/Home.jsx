@@ -67,14 +67,28 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/about" className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md">
-              Start with About
+              Explore My Background
             </Link>
             <Link to="/projects" className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-400 hover:shadow-sm">
-              View Projects
+              See My Work
             </Link>
             <Link to="/contact" className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-400 hover:shadow-sm">
-              Contact
+              Start a Conversation
             </Link>
+          </div>
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Certified:</span>
+            {["QuickBooks Online", "Google AI Essentials", "Project Management", "Accounting Systems"].map((c) => (
+              <span key={c} className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">{c}</span>
+            ))}
+            <a
+              href="https://www.linkedin.com/in/idris-kabangu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 text-xs font-semibold text-blue-600 hover:text-blue-700"
+            >
+              LinkedIn &rarr;
+            </a>
           </div>
         </div>
 
@@ -87,6 +101,7 @@ export default function Home() {
                 width="224"
                 height="224"
                 decoding="async"
+                fetchPriority="high"
                 className="h-full w-full object-contain"
               />
             </div>

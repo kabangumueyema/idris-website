@@ -51,9 +51,9 @@ const articleSchema = {
     "fintech",
   ],
   citation: [
-    "https://www.weforum.org/publications/the-future-of-global-fintech-towards-resilient-growth-and-inclusive-transformation/",
-    "https://www.weforum.org/publications/ai-in-financial-services/",
-    "https://www.weforum.org/publications/the-future-of-tokenization/",
+    "https://www.weforum.org/publications/the-future-of-global-fintech-2025/",
+    "https://www.weforum.org/publications/industries-in-the-intelligent-age-white-paper-series/financial-services/",
+    "https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/",
   ],
 };
 
@@ -260,18 +260,18 @@ export default function InsightDigitalTransformationFSPage() {
             <h2 className="text-2xl font-semibold text-slate-950">Sources</h2>
             <ul className="mt-4 list-disc space-y-2 pl-6 text-blue-700">
               <li>
-                <a href="https://www.weforum.org/publications/the-future-of-global-fintech-towards-resilient-growth-and-inclusive-transformation/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
-                  World Economic Forum - The Future of Global Fintech (2025)
+                <a href="https://www.weforum.org/publications/the-future-of-global-fintech-2025/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
+                  World Economic Forum - The Future of Global Fintech: From Rapid Expansion to Sustainable Growth (2025)
                 </a>
               </li>
               <li>
-                <a href="https://www.weforum.org/publications/ai-in-financial-services/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
-                  World Economic Forum - AI in Financial Services (Jan 2025)
+                <a href="https://www.weforum.org/publications/industries-in-the-intelligent-age-white-paper-series/financial-services/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
+                  World Economic Forum - Financial Services (Industries in the Intelligent Age White Paper Series, Jan 2025)
                 </a>
               </li>
               <li>
-                <a href="https://www.weforum.org/publications/the-future-of-tokenization/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
-                  World Economic Forum - The Future of Tokenization (May 2025)
+                <a href="https://www.weforum.org/publications/asset-tokenization-in-financial-markets-the-next-generation-of-value-exchange/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 hover:underline">
+                  World Economic Forum - Asset Tokenization in Financial Markets: The Next Generation of Value Exchange (May 2025)
                 </a>
               </li>
             </ul>

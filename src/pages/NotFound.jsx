@@ -9,7 +9,7 @@ export default function NotFoundPage() {
         description="The page you are looking for does not exist. Return to Idris Kabangu's professional website."
         path="/404"
       />
-      <section className="mx-auto flex min-h-[60vh] max-w-7xl items-center px-6 py-20 lg:px-8">
+      <section className="mx-auto flex min-h-[60vh] max-w-7xl items-center px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-semibold text-slate-950 sm:text-5xl">Page not found</h1>
           <p className="mt-4 text-base leading-7 text-slate-600">

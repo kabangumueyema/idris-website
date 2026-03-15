@@ -27,18 +27,18 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 text-sm font-semibold tracking-wide text-slate-900"
+          className="flex min-w-0 items-center gap-2 text-sm font-semibold tracking-wide text-slate-900"
         >
           <img
             src={brandLogo}
             alt="Idris Kabangu logo"
             className="h-7 w-7 rounded-md object-contain"
           />
-          <span>Idris Kabangu</span>
+          <span className="truncate">Idris Kabangu</span>
         </Link>
 
         {/* Desktop nav */}
@@ -72,7 +72,7 @@ export default function Navbar() {
       {open && (
         <nav
           id={mobileMenuId}
-          className="border-t border-slate-200 bg-slate-50 px-6 pb-5 pt-4 shadow-sm md:hidden"
+          className="border-t border-slate-200 bg-slate-50 px-4 pb-5 pt-4 shadow-sm sm:px-6 md:hidden"
         >
           <ul className="flex flex-col gap-2 text-sm">
             {navLinks.map(({ to, label, end }) => (

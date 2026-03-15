@@ -64,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <section id="contact" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Contact</p>
         <h2 className="mt-4 text-3xl font-semibold text-slate-950">Let's discuss your business systems and growth opportunities.</h2>

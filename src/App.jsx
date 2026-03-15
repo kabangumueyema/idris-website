@@ -28,7 +28,7 @@ export default function App() {
           <ScrollToTop />
           <Navbar />
           <main id="main-content">
-            <Suspense fallback={<div className="mx-auto max-w-7xl px-6 py-10 text-sm text-slate-500 lg:px-8">Loading...</div>}>
+            <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-10 text-sm text-slate-500 sm:px-6 lg:px-8">Loading...</div>}>
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />

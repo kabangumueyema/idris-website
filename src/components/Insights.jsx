@@ -5,7 +5,7 @@ export default function Insights() {
   const isInternalLink = (url) => url.startsWith("/");
 
   return (
-    <section id="insights" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <section id="insights" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Insights</p>
         <h2 className="mt-4 text-3xl font-semibold text-slate-950">Thought leadership on business systems and digital growth.</h2>

@@ -101,7 +101,7 @@ export default function InsightDigitalTransformationFSPage() {
         structuredData={[articleSchema, breadcrumbSchema]}
       />
 
-      <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
+      <article className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
         <header className="border-b border-slate-200 pb-8">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Insights</p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl">

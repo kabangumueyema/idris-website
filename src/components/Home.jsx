@@ -50,7 +50,7 @@ export default function Home() {
         <div className="absolute left-1/4 top-1/3 h-px w-24 bg-blue-300" />
       </div>
 
-      <div className="relative mx-auto grid max-w-7xl gap-16 px-6 py-20 lg:grid-cols-12 lg:px-8 lg:py-24">
+      <div className="relative mx-auto grid max-w-7xl gap-16 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-24">
         <div className="lg:col-span-7">
           <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-blue-600">
             Business Systems & Strategy • Finance • Operations • Digital Growth
@@ -65,34 +65,6 @@ export default function Home() {
           <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
             This site is designed as a practical gateway to my background, methods, selected work, and current thinking.
           </p>
-          <div className="mt-6 max-w-2xl rounded-2xl border border-slate-200 bg-white p-5">
-            <h2 className="text-base font-semibold text-slate-900">How this website is structured for clarity</h2>
-            <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm leading-7 text-slate-600">
-              <li>Each section focuses on one clear intent: background, expertise, projects, and insights.</li>
-              <li>Long-form insights use explicit headings, scannable lists, and source attribution.</li>
-              <li>Evidence-heavy claims are linked to primary sources whenever possible.</li>
-            </ol>
-          </div>
-          <div className="mt-4 max-w-2xl rounded-2xl border border-slate-200 bg-slate-50 p-5">
-            <h2 className="text-base font-semibold text-slate-900">Method references</h2>
-            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7 text-slate-600">
-              <li>
-                <a href="https://developers.google.com/search/docs/appearance/structured-data/article" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                  Google Search Central - Article structured data
-                </a>
-              </li>
-              <li>
-                <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                  Google Search Central - Sitemap guidance
-                </a>
-              </li>
-              <li>
-                <a href="https://schema.org/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
-                  Schema.org - Structured data vocabulary
-                </a>
-              </li>
-            </ul>
-          </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/about" className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md">
               Start with About
@@ -149,7 +121,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-slate-200 bg-white/95 p-8 shadow-sm sm:p-10">
           <div className="max-w-3xl">
             <h2 className="text-2xl font-semibold text-slate-950">Navigate the Practice</h2>

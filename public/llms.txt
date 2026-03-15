@@ -1,0 +1,31 @@
+# Idris Kabangu website
+
+> Professional site covering business systems, strategy, finance, operations, and digital growth.
+
+## Preferred URLs
+- https://www.ikabangu.com/
+- https://www.ikabangu.com/about
+- https://www.ikabangu.com/expertise
+- https://www.ikabangu.com/projects
+- https://www.ikabangu.com/insights
+- https://www.ikabangu.com/contact
+
+## Insights (long-form)
+- https://www.ikabangu.com/insights/future-of-work-ai-augmented-decision-making
+- https://www.ikabangu.com/insights/digital-transformation-financial-services
+- https://www.ikabangu.com/insights/sustainable-business-models-beyond-esg
+- https://www.ikabangu.com/insights/operational-excellence-in-the-digital-age
+
+## Canonical feed endpoints
+- Sitemap: https://www.ikabangu.com/sitemap.xml
+- RSS: https://www.ikabangu.com/insights.xml
+
+## Author
+- Name: Idris Kabangu
+- About: https://www.ikabangu.com/about
+
+## Topic summary
+- Business systems design and execution discipline
+- Financial clarity and operating performance
+- AI-era decision making and digital transformation
+- Sustainability strategy and reporting alignment

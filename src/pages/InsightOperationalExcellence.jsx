@@ -64,6 +64,31 @@ const blogPostingSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.ikabangu.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Insights",
+      item: "https://www.ikabangu.com/insights",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: articleMeta.title,
+      item: articleUrl,
+    },
+  ],
+};
+
 export default function InsightOperationalExcellencePage() {
   return (
     <>
@@ -77,7 +102,7 @@ export default function InsightOperationalExcellencePage() {
         modifiedTime="2026-03-15"
         section={articleMeta.category}
         tags={["operational excellence", "digital operations", "process optimization", "AI adoption", "performance"]}
-        structuredData={blogPostingSchema}
+        structuredData={[blogPostingSchema, breadcrumbSchema]}
       />
 
       <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8">

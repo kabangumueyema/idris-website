@@ -60,6 +60,31 @@ const articleSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.ikabangu.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Insights",
+      item: "https://www.ikabangu.com/insights",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: articleMeta.title,
+      item: articleUrl,
+    },
+  ],
+};
+
 export default function InsightDigitalTransformationFSPage() {
   return (
     <>
@@ -73,7 +98,7 @@ export default function InsightDigitalTransformationFSPage() {
         modifiedTime={articleMeta.publishedAt}
         section={articleMeta.category}
         tags={["digital transformation", "financial services", "embedded finance", "open finance", "fintech"]}
-        structuredData={articleSchema}
+        structuredData={[articleSchema, breadcrumbSchema]}
       />
 
       <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8">

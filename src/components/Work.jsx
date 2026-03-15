@@ -6,6 +6,19 @@ export default function Work() {
       <div className="max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Projects / Work</p>
         <h2 className="mt-4 text-3xl font-semibold text-slate-950">Representative work shaped by systems thinking.</h2>
+        <p className="mt-3 text-sm font-medium text-slate-500">Updated March 2026</p>
+        <p className="mt-4 text-sm leading-7 text-slate-600">
+          Each project summary follows a fixed evidence format: objective, approach, and outcome.
+        </p>
+      </div>
+
+      <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+        <h3 className="text-lg font-semibold text-slate-950">How to interpret project outcomes</h3>
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7 text-slate-600">
+          <li>Outcomes are based on project analysis, case data, or modeled scenarios.</li>
+          <li>Where figures are shown, they reflect project-scope assumptions at the time of analysis.</li>
+          <li>Results are presented as decision-support evidence, not universal guarantees.</li>
+        </ul>
       </div>
 
       <div className="mt-12 space-y-6">

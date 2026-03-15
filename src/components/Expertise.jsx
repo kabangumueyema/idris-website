@@ -8,9 +8,20 @@ export default function Expertise() {
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Expertise</p>
           <h2 className="mt-4 text-3xl font-semibold text-slate-950">Structured expertise across finance, operations, and digital growth.</h2>
+          <p className="mt-3 text-sm font-medium text-slate-500">Updated March 2026</p>
           <p className="mt-4 text-slate-600 leading-8">
             A consulting-style approach focused on clarity, structure, and practical outcomes.
           </p>
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <h3 className="text-xl font-semibold text-slate-950">Execution framework</h3>
+          <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm leading-7 text-slate-600">
+            <li>Define the decision, constraint, and measurable objective.</li>
+            <li>Map workflows and ownership before proposing technology changes.</li>
+            <li>Prioritize actions by value, risk, and implementation feasibility.</li>
+            <li>Track outcomes with operational and financial metrics.</li>
+          </ol>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -31,6 +42,27 @@ export default function Expertise() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-12 rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 className="text-lg font-semibold text-slate-950">Reference standards used in this site</h3>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-7">
+            <li>
+              <a href="https://developers.google.com/search/docs/appearance/structured-data/article" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                Google Search Central - Article structured data
+              </a>
+            </li>
+            <li>
+              <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                Google Search Central - Sitemaps
+              </a>
+            </li>
+            <li>
+              <a href="https://schema.org/ItemList" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 hover:underline">
+                Schema.org - ItemList for structured content collections
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

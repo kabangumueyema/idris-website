@@ -55,6 +55,7 @@ export default function Home() {
           <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-blue-600">
             Business Systems & Strategy • Finance • Operations • Digital Growth
           </p>
+          <p className="text-sm font-medium text-slate-500">Updated March 2026</p>
           <h1 className="max-w-4xl text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl lg:text-5xl">
             I help organizations move from confusion to clarity by building systems, improving execution, and making growth more disciplined.
           </h1>
@@ -64,6 +65,14 @@ export default function Home() {
           <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
             This site is designed as a practical gateway to my background, methods, selected work, and current thinking.
           </p>
+          <div className="mt-6 max-w-2xl rounded-2xl border border-slate-200 bg-white p-5">
+            <h2 className="text-base font-semibold text-slate-900">How this website is structured for clarity</h2>
+            <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm leading-7 text-slate-600">
+              <li>Each section focuses on one clear intent: background, expertise, projects, and insights.</li>
+              <li>Long-form insights use explicit headings, scannable lists, and source attribution.</li>
+              <li>Evidence-heavy claims are linked to primary sources whenever possible.</li>
+            </ol>
+          </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/about" className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md">
               Start with About

@@ -78,30 +78,30 @@ export default function Contact() {
           </p>
 
           <div className="mt-8 space-y-4">
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+            <div className="flex items-start gap-3">
+              <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
-              <span className="ml-3 text-sm text-slate-600">kabangumueyema7@gmail.com</span>
+              <span className="min-w-0 break-all text-sm text-slate-600">kabangumueyema7@gmail.com</span>
             </div>
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+            <div className="flex items-start gap-3">
+              <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
               </svg>
-              <span className="ml-3 text-sm text-slate-600">+243 84 843 24 39</span>
+              <span className="min-w-0 text-sm text-slate-600">+243 84 843 24 39</span>
             </div>
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+            <div className="flex items-start gap-3">
+              <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25s-7.5-4.108-7.5-11.25a7.5 7.5 0 1115 0z" />
               </svg>
-              <span className="ml-3 text-sm text-slate-600">Kinshasa, Democratic Republic of Congo</span>
+              <span className="min-w-0 text-sm text-slate-600">Kinshasa, Democratic Republic of Congo</span>
             </div>
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+            <div className="flex items-start gap-3">
+              <svg className="mt-0.5 h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
               </svg>
-              <a href="https://www.linkedin.com/in/idris-kabangu/" target="_blank" rel="noopener noreferrer" className="ml-3 text-sm text-slate-600 hover:text-blue-600">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/idris-kabangu/" target="_blank" rel="noopener noreferrer" className="min-w-0 break-words text-sm text-slate-600 hover:text-blue-600">LinkedIn Profile</a>
             </div>
           </div>
         </div>

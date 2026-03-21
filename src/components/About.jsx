@@ -1,3 +1,5 @@
+import aboutPhoto from "../assets/about-photo.jpg";
+
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -6,6 +8,15 @@ export default function About() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">About</p>
           <h2 className="mt-4 text-3xl font-semibold text-slate-950">A cross-disciplinary professional journey.</h2>
           <p className="mt-3 text-sm font-medium text-slate-500">Updated March 2026</p>
+          <div className="mt-6 overflow-hidden rounded-2xl shadow-md">
+            <img
+              src={aboutPhoto}
+              alt="Idris Kabangu"
+              width="400"
+              height="480"
+              className="w-full object-cover object-top"
+            />
+          </div>
         </div>
         <div className="lg:col-span-8 space-y-6 text-slate-600 leading-8">
           <p>
